@@ -1,0 +1,7 @@
+{
+  "name": "Bublu Xerox Point",
+  "description": "Professional business website for Bublu Xerox Point, offering high-quality PVC card printing, PAN card services, and digital solutions with direct WhatsApp ordering.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
