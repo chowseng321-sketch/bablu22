@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import { 
   Menu, 
   X, 
@@ -213,7 +213,6 @@ export default function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            {/* Main Landing Route */}
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/order-photo" element={<PhotoOrder />} />
@@ -221,7 +220,6 @@ export default function App() {
             <Route path="/online-order" element={<OnlineOrder />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            {/* Catch-all route to redirect back to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
